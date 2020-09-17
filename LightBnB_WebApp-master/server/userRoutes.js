@@ -61,7 +61,7 @@ module.exports = function(router, database) {
     }
 
     database.getUserWithId(userId)
-      .then(user => {
+      .then(user => { 
         if (!user) {
           res.send({error: "no user with that id"});
           return;
